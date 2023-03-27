@@ -111,12 +111,12 @@ class DTMI(Base):
             used_label = ori_labels
             used_coef = 1
         
-        if self.random_start:
-            adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
-            adv_images = torch.clamp(adv_images, min=0, max=1).detach()
-            delta = torch.tensor((adv_images - images).clone().detach(), requires_grad=True).cuda()
-        else:
-            delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
+#         if self.random_start:
+#             adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
+#             adv_images = torch.clamp(adv_images, min=0, max=1).detach()
+#             delta = torch.tensor((adv_images - images).clone().detach(), requires_grad=True).cuda()
+#         else:
+        delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
 
         result_matrix = np.zeros((len(self.eval_models), len(self.eval_steps)))
         norm_matrix = np.zeros((self.steps, batch_size))
@@ -194,12 +194,12 @@ class DTMI_SI(Base):
             used_label = ori_labels
             used_coef = 1
         
-        if self.random_start:
-            adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
-            adv_images = torch.clamp(adv_images, min=0, max=1).detach()
-            delta = torch.tensor((adv_images - images).clone().detach(), requires_grad=True).cuda()
-        else:
-            delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
+#         if self.random_start:
+#             adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
+#             adv_images = torch.clamp(adv_images, min=0, max=1).detach()
+#             delta = torch.tensor((adv_images - images).clone().detach(), requires_grad=True).cuda()
+#         else:
+        delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
 
         result_matrix = np.zeros((len(self.eval_models), len(self.eval_steps)))
         norm_matrix = np.zeros((self.steps, batch_size))
@@ -298,12 +298,12 @@ class DTMI_Local_FeatureSimilarityLoss_SI(Base):
             used_label = ori_labels
             used_coef = 1
         
-        if self.random_start:
-            adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
-            adv_images = torch.clamp(adv_images, min=0, max=1).detach()
-            delta = torch.Tensor(adv_images - images, requires_grad=True).cuda()
-        else:
-            delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
+#         if self.random_start:
+#             adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
+#             adv_images = torch.clamp(adv_images, min=0, max=1).detach()
+#             delta = torch.Tensor(adv_images - images, requires_grad=True).cuda()
+#         else:
+        delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
 
         result_matrix = np.zeros((len(self.eval_models), len(self.eval_steps)))
         norm_matrix = np.zeros((self.steps, batch_size))
@@ -392,12 +392,12 @@ class DTMI_Admix(Base):
             used_label = ori_labels
             used_coef = 1
         
-        if self.random_start:
-            adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
-            adv_images = torch.clamp(adv_images, min=0, max=1).detach()
-            delta = torch.tensor((adv_images - images).clone().detach(), requires_grad=True).cuda()
-        else:
-            delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
+#         if self.random_start:
+#             adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
+#             adv_images = torch.clamp(adv_images, min=0, max=1).detach()
+#             delta = torch.tensor((adv_images - images).clone().detach(), requires_grad=True).cuda()
+#         else:
+        delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
 
         result_matrix = np.zeros((len(self.eval_models), len(self.eval_steps)))
         norm_matrix = np.zeros((self.steps, batch_size))
@@ -498,12 +498,12 @@ class DTMI_Local_FeatureSimilarityLoss_Admix(Base):
             used_label = ori_labels
             used_coef = 1
         
-        if self.random_start:
-            adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
-            adv_images = torch.clamp(adv_images, min=0, max=1).detach()
-            delta = torch.Tensor(adv_images - images, requires_grad=True).cuda()
-        else:
-            delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
+#         if self.random_start:
+#             adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
+#             adv_images = torch.clamp(adv_images, min=0, max=1).detach()
+#             delta = torch.Tensor(adv_images - images, requires_grad=True).cuda()
+#         else:
+        delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
 
         result_matrix = np.zeros((len(self.eval_models), len(self.eval_steps)))
         norm_matrix = np.zeros((self.steps, batch_size))
@@ -594,12 +594,12 @@ class DTEMI(Base):
             used_label = ori_labels
             used_coef = 1
         
-        if self.random_start:
-            adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
-            adv_images = torch.clamp(adv_images, min=0, max=1).detach()
-            delta = torch.tensor((adv_images - images).clone().detach(), requires_grad=True).cuda()
-        else:
-            delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
+#         if self.random_start:
+#             adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
+#             adv_images = torch.clamp(adv_images, min=0, max=1).detach()
+#             delta = torch.tensor((adv_images - images).clone().detach(), requires_grad=True).cuda()
+#         else:
+        delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
 
         result_matrix = np.zeros((len(self.eval_models), len(self.eval_steps)))
         norm_matrix = np.zeros((self.steps, batch_size))
@@ -708,12 +708,12 @@ class DTMI_Local_FeatureSimilarityLoss_EMI(Base):
             used_label = ori_labels
             used_coef = 1
         
-        if self.random_start:
-            adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
-            adv_images = torch.clamp(adv_images, min=0, max=1).detach()
-            delta = torch.Tensor(adv_images - images, requires_grad=True).cuda()
-        else:
-            delta = torch.zeros_like(adv_images, requires_grad=True).cuda()
+#         if self.random_start:
+#             adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
+#             adv_images = torch.clamp(adv_images, min=0, max=1).detach()
+#             delta = torch.Tensor(adv_images - images, requires_grad=True).cuda()
+#         else:
+        delta = torch.zeros_like(adv_images, requires_grad=True).cuda()
 
         result_matrix = np.zeros((len(self.eval_models), len(self.eval_steps)))
         norm_matrix = np.zeros((self.steps, batch_size))
@@ -822,12 +822,12 @@ class DTMI_Local_FeatureSimilarityLoss(Base):
             used_label = ori_labels
             used_coef = 1
         
-        if self.random_start:
-            adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
-            adv_images = torch.clamp(adv_images, min=0, max=1).detach()
-            delta = torch.Tensor(adv_images - images, requires_grad=True).cuda()
-        else:
-            delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
+#         if self.random_start:
+#             adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
+#             adv_images = torch.clamp(adv_images, min=0, max=1).detach()
+#             delta = torch.Tensor(adv_images - images, requires_grad=True).cuda()
+#         else:
+        delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
 
         result_matrix = np.zeros((len(self.eval_models), len(self.eval_steps)))
         norm_matrix = np.zeros((self.steps, batch_size))
@@ -931,12 +931,12 @@ class DTMI_Random_FeatureSimilarityLoss(Base):
             used_label = ori_labels
             used_coef = 1
         
-        if self.random_start:
-            adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
-            adv_images = torch.clamp(adv_images, min=0, max=1).detach()
-            delta = torch.Tensor(adv_images - images, requires_grad=True).cuda()
-        else:
-            delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
+#         if self.random_start:
+#             adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
+#             adv_images = torch.clamp(adv_images, min=0, max=1).detach()
+#             delta = torch.Tensor(adv_images - images, requires_grad=True).cuda()
+#         else:
+        delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
 
         result_matrix = np.zeros((len(self.eval_models), len(self.eval_steps)))
         iter_flag = 0
@@ -1048,12 +1048,12 @@ class DTMI_Local_FeatureSimilarityLoss_Center(Base):
             used_label = ori_labels
             used_coef = 1
         
-        if self.random_start:
-            adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
-            adv_images = torch.clamp(adv_images, min=0, max=1).detach()
-            delta = torch.Tensor(adv_images - images, requires_grad=True).cuda()
-        else:
-            delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
+#         if self.random_start:
+#             adv_images = adv_images + torch.empty_like(adv_images).uniform_(-self.epsilon, self.epsilon)
+#             adv_images = torch.clamp(adv_images, min=0, max=1).detach()
+#             delta = torch.Tensor(adv_images - images, requires_grad=True).cuda()
+#         else:
+        delta = torch.zeros_like(adv_images,requires_grad=True).cuda()
 
         result_matrix = np.zeros((len(self.eval_models), len(self.eval_steps)))
         iter_flag = 0
