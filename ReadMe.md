@@ -10,7 +10,6 @@ If you use our method for attacks in your research, please consider citing
   year={2023}
 }
 ```
-% pages={15064--15073},
 
 # Preparation
 ## Environment
