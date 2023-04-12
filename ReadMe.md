@@ -3,15 +3,14 @@ This paper has been accepted by CVPR2023. [[Paper]](https://arxiv.org/abs/2209.0
 
 If you use our method for attacks in your research, please consider citing
 ```
-@misc{wei2023enhancing,
-      title={Enhancing the Self-Universality for Transferable Targeted Attacks}, 
-      author={Zhipeng Wei and Jingjing Chen and Zuxuan Wu and Yu-Gang Jiang},
-      year={2023},
-      eprint={2209.03716},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{wei2023enhancing,
+  title={Enhancing the Self-Universality for Transferable Targeted Attacks},
+  author={Wei, Zhipeng and Chen, Jingjing and Wu, Zuxuan and Jiang, Yu-Gang},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2023}
 }
 ```
+% pages={15064--15073},
 
 # Preparation
 ## Environment
