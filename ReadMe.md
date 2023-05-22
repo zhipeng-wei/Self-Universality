@@ -1,5 +1,13 @@
-# Enhancing the Self-Universality for Transferable Targeted Attacks 
-This paper has been accepted by CVPR2023. [[Paper]](https://arxiv.org/abs/2209.03716).
+<div align="center">
+
+<h1><a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Wei_Enhancing_the_Self-Universality_for_Transferable_Targeted_Attacks_CVPR_2023_paper.pdf">Enhancing the Self-Universality for Transferable Targeted Attacks</a></h1>
+
+**CVPR 2023**
+
+**[Zhipeng Wei](https://zhipeng-wei.github.io/), [Jingjing Chen](https://fvl.fudan.edu.cn/people/jingjingchen), [Zuxuan Wu](https://zxwu.azurewebsites.net/), [Yu-Gang Jiang](https://fvl.fudan.edu.cn/people/yugangjiang/)**
+
+
+</div>
 
 If you use our method for attacks in your research, please consider citing
 ```
