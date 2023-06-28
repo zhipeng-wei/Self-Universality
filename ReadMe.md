@@ -15,6 +15,7 @@ If you use our method for attacks in your research, please consider citing
   title={Enhancing the Self-Universality for Transferable Targeted Attacks},
   author={Wei, Zhipeng and Chen, Jingjing and Wu, Zuxuan and Jiang, Yu-Gang},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={12281--12290},
   year={2023}
 }
 ```
