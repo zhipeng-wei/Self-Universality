@@ -36,7 +36,7 @@ class Base(object):
 
         c = np.random.rand(1)
         if c <= 0.7:
-            X_out = F.pad(F.interpolate(X_in, size=(rnd,rnd)),(pad_left,pad_top,pad_right,pad_bottom),mode='constant', value=0)
+            X_out = F.pad(F.interpolate(X_in, size=(rnd,rnd)),(pad_left,pad_right,pad_top,pad_bottom),mode='constant', value=0)
             return  X_out 
         else:
             return  X_in
