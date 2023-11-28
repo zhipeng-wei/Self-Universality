@@ -50,7 +50,7 @@ class Base(object):
         pad_left = np.random.randint(0, w_rem,size=1)[0]
         pad_right = w_rem - pad_left
 
-        X_out = F.pad(F.interpolate(X_in, size=(rnd,rnd)),(pad_left,pad_top,pad_right,pad_bottom),mode='constant', value=0)
+        X_out = F.pad(F.interpolate(X_in, size=(rnd,rnd)),(pad_left,pad_right,pad_top,pad_bottom),mode='constant', value=0)
         X_out = F.interpolate(X_out, size=(X_in.shape[-2], X_in.shape[-1]))
         return  X_out 
 
